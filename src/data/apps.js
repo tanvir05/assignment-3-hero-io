@@ -2,7 +2,7 @@
 
 export const appsData = [
   {
-    image: "https://source.unsplash.com/featured/800x800/?forest,focus,productivity",
+    image: "https://picsum.photos/seed/1001/800/800",
     title: "Forest: Focus For Productivity",
     companyName: "Focus Labs",
     id: 1001,
@@ -21,7 +21,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?todo,checklist,planner",
+    image: "https://picsum.photos/seed/1002/800/800",
     title: "SmPlan: ToDo List With Reminder",
     companyName: "SmPlan Studio",
     id: 1002,
@@ -40,7 +40,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?pomodoro,timer,study",
+    image: "https://picsum.photos/seed/1003/800/800",
     title: "FLIP: Focus Timer For Study",
     companyName: "Fliptime Inc.",
     id: 1003,
@@ -59,7 +59,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?cat,pomodoro,timer",
+    image: "https://picsum.photos/seed/1004/800/800",
     title: "Pomocat: Cute Pomodoro Timer",
     companyName: "Pomocat Co.",
     id: 1004,
@@ -78,7 +78,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?calendar,schedule,planning",
+    image: "https://picsum.photos/seed/1005/800/800",
     title: "Time Planner: Schedule & Tasks",
     companyName: "TimeWorks",
     id: 1005,
@@ -97,7 +97,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?morning,routine,habits",
+    image: "https://picsum.photos/seed/1006/800/800",
     title: "Morning Habits: Daily Routine",
     companyName: "HabitFlow",
     id: 1006,
@@ -116,7 +116,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?plant,focus,productivity",
+    image: "https://picsum.photos/seed/1007/800/800",
     title: "Focus Plant: Pomodoro Forest",
     companyName: "GreenFocus",
     id: 1007,
@@ -135,7 +135,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?alarm,clock,sleep",
+    image: "https://picsum.photos/seed/1008/800/800",
     title: "Alarmy: Alarm Clock & Sleep",
     companyName: "SleepBetter",
     id: 1008,
@@ -154,7 +154,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?notes,productivity,workspace",
+    image: "https://picsum.photos/seed/1009/800/800",
     title: "NotionLite: Notes & Tasks",
     companyName: "Workspace Tools",
     id: 1009,
@@ -173,7 +173,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?music,headphones,study",
+    image: "https://picsum.photos/seed/1010/800/800",
     title: "Focus Beats: Study Music",
     companyName: "Beats Studio",
     id: 1010,
@@ -192,7 +192,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?weekly,planner,calendar",
+    image: "https://picsum.photos/seed/1011/800/800",
     title: "DayGrid: Weekly Planner",
     companyName: "DayGrid Team",
     id: 1011,
@@ -211,7 +211,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?meditation,mindfulness,calm",
+    image: "https://picsum.photos/seed/1012/800/800",
     title: "MindTimer: Meditation & Focus",
     companyName: "Mindful Studio",
     id: 1012,
@@ -232,7 +232,7 @@ export const appsData = [
 
   // 20 more
   {
-    image: "https://source.unsplash.com/featured/800x800/?productivity,workspace,desk",
+    image: "https://picsum.photos/seed/1013/800/800",
     title: "DeskFlow: Daily Productivity Planner",
     companyName: "DeskFlow Studio",
     id: 1013,
@@ -251,7 +251,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?task,checklist,productivity",
+    image: "https://picsum.photos/seed/1014/800/800",
     title: "TaskPilot: Smart Checklist & Goals",
     companyName: "Pilot Apps",
     id: 1014,
@@ -270,7 +270,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?timer,focus,pomodoro",
+    image: "https://picsum.photos/seed/1015/800/800",
     title: "PomodoPro: Focus Timer & Breaks",
     companyName: "PomodoPro",
     id: 1015,
@@ -289,7 +289,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?calendar,planner,agenda",
+    image: "https://picsum.photos/seed/1016/800/800",
     title: "AgendaMate: Calendar & Scheduling",
     companyName: "AgendaMate Inc.",
     id: 1016,
@@ -308,7 +308,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?notes,notebook,writing",
+    image: "https://picsum.photos/seed/1017/800/800",
     title: "NoteNest: Notes & Quick Capture",
     companyName: "NoteNest",
     id: 1017,
@@ -327,7 +327,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?habits,routine,tracker",
+    image: "https://picsum.photos/seed/1018/800/800",
     title: "HabitHorizon: Routine Tracker",
     companyName: "Horizon Labs",
     id: 1018,
@@ -346,7 +346,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?study,library,focus",
+    image: "https://picsum.photos/seed/1019/800/800",
     title: "StudySprint: Sessions & Streaks",
     companyName: "SprintWorks",
     id: 1019,
@@ -365,7 +365,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?music,lofi,headphones",
+    image: "https://picsum.photos/seed/1020/800/800",
     title: "LofiRoom: Focus Music & Ambience",
     companyName: "LofiRoom",
     id: 1020,
@@ -384,7 +384,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?sleep,bedtime,alarm",
+    image: "https://picsum.photos/seed/1021/800/800",
     title: "SleepSync: Alarm & Sleep Routine",
     companyName: "SleepSync",
     id: 1021,
@@ -403,7 +403,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?meditation,zen,mindfulness",
+    image: "https://picsum.photos/seed/1022/800/800",
     title: "ZenPulse: Meditation & Breathing",
     companyName: "ZenPulse Co.",
     id: 1022,
@@ -422,7 +422,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?email,inbox,productivity",
+    image: "https://picsum.photos/seed/1023/800/800",
     title: "InboxZen: Email Cleanup Assistant",
     companyName: "InboxZen",
     id: 1023,
@@ -441,7 +441,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?finance,budget,tracker",
+    image: "https://picsum.photos/seed/1024/800/800",
     title: "BudgetBuddy: Expense Tracker",
     companyName: "BudgetBuddy",
     id: 1024,
@@ -460,7 +460,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?fitness,workout,training",
+    image: "https://picsum.photos/seed/1025/800/800",
     title: "FitFocus: Workout & Habit Planner",
     companyName: "FitFocus",
     id: 1025,
@@ -479,7 +479,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?shopping,list,groceries",
+    image: "https://picsum.photos/seed/1026/800/800",
     title: "ShopSwift: Smart Grocery List",
     companyName: "ShopSwift",
     id: 1026,
@@ -498,7 +498,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?reading,book,library",
+    image: "https://picsum.photos/seed/1027/800/800",
     title: "ReadRise: Reading Tracker",
     companyName: "ReadRise",
     id: 1027,
@@ -517,7 +517,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?journal,writing,daily",
+    image: "https://picsum.photos/seed/1028/800/800",
     title: "DayJournal: Mood & Notes",
     companyName: "DayJournal Labs",
     id: 1028,
@@ -536,7 +536,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?weather,forecast,app",
+    image: "https://picsum.photos/seed/1029/800/800",
     title: "WeatherWise: Forecast & Alerts",
     companyName: "WeatherWise",
     id: 1029,
@@ -555,7 +555,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?password,security,lock",
+    image: "https://picsum.photos/seed/1030/800/800",
     title: "VaultKey: Password Manager",
     companyName: "VaultKey",
     id: 1030,
@@ -574,7 +574,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?camera,photo,editing",
+    image: "https://picsum.photos/seed/1031/800/800",
     title: "SnapEdit: Photo Editor",
     companyName: "SnapEdit Co.",
     id: 1031,
@@ -593,7 +593,7 @@ export const appsData = [
     ],
   },
   {
-    image: "https://source.unsplash.com/featured/800x800/?map,travel,navigation",
+    image: "https://picsum.photos/seed/1032/800/800",
     title: "RouteBuddy: Travel Planner",
     companyName: "RouteBuddy",
     id: 1032,
