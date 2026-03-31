@@ -18,16 +18,35 @@ export default function AppDetails() {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  const app = useMemo(() => appsData.find((a) => a.id === id), [id]);
-  const [installed, setInstalled] = useState(() => (app ? isInstalled(app.id) : false));
+  // ✅ FIX 1: id from URL is string, your data id is number
+  const app = useMemo(
+    () => appsData.find((a) => String(a.id) === String(id)),
+    [id]
+  );
+
+  const [installed, setInstalled] = useState(() =>
+    app ? isInstalled(app.id) : false
+  );
+
+  // ✅ Chart data from your new shape: ratings: [{name, count}]
+  const chartData = useMemo(() => {
+    if (!app) return [];
+    // Show 5 star at top (optional)
+    return [...app.ratings].reverse();
+  }, [app]);
 
   if (!app) {
     return (
       <section className="section">
         <div className="error-box">
           <h2>OPPS!! APP NOT FOUND</h2>
-          <p>The App you are requesting is not found on our system. Please try another app.</p>
-          <button className="btn btn-primary" onClick={() => navigate("/apps")}>Go Back!</button>
+          <p>
+            The App you are requesting is not found on our system. Please try
+            another app.
+          </p>
+          <button className="btn btn-primary" onClick={() => navigate("/apps")}>
+            Go Back!
+          </button>
         </div>
       </section>
     );
@@ -51,7 +70,11 @@ export default function AppDetails() {
 
         <div className="details-right">
           <h2 className="details-title">{app.title}</h2>
-          <div className="details-sub">Developed by <span className="accent">productive.io</span></div>
+
+          {/* ✅ FIX 2: Use companyName from data */}
+          <div className="details-sub">
+            Developed by <span className="accent">{app.companyName}</span>
+          </div>
 
           <div className="details-metrics">
             <div className="metric">
@@ -59,11 +82,15 @@ export default function AppDetails() {
               <div className="metric-label">Downloads</div>
               <div className="metric-value">{formatDownloads(app.downloads)}</div>
             </div>
+
             <div className="metric">
               <div className="metric-icon">★</div>
               <div className="metric-label">Average Ratings</div>
-              <div className="metric-value">{app.rating}</div>
+
+              {/* ✅ FIX 3: ratingAvg instead of rating */}
+              <div className="metric-value">{app.ratingAvg}</div>
             </div>
+
             <div className="metric">
               <div className="metric-icon">▣</div>
               <div className="metric-label">Total Reviews</div>
@@ -76,7 +103,8 @@ export default function AppDetails() {
             disabled={installed}
             onClick={onInstall}
           >
-            {installed ? "Installed" : `Install Now (${app.sizeMB} MB)`}
+            {/* ✅ FIX 4: size instead of sizeMB */}
+            {installed ? "Installed" : `Install Now (${app.size} MB)`}
           </button>
         </div>
       </div>
@@ -86,11 +114,12 @@ export default function AppDetails() {
       <h3 className="block-title">Ratings</h3>
       <div className="chart-wrap">
         <ResponsiveContainer width="100%" height={260}>
-          <BarChart data={app.reviewBreakdown} layout="vertical" margin={{ left: 20, right: 20 }}>
+          {/* ✅ FIX 5: use chartData + dataKey="count" */}
+          <BarChart data={chartData} layout="vertical" margin={{ left: 20, right: 20 }}>
             <XAxis type="number" />
             <YAxis type="category" dataKey="name" />
             <Tooltip />
-            <Bar dataKey="value" />
+            <Bar dataKey="count" />
           </BarChart>
         </ResponsiveContainer>
       </div>

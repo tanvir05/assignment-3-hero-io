@@ -11,7 +11,7 @@ export default function AppCard({ app, onClick }) {
 
       <div className="app-meta">
         <div className="pill pill-green">⬇ {formatDownloads(app.downloads)}</div>
-        <div className="pill pill-orange">★ {app.rating}</div>
+        <div className="pill pill-orange">★ {app.ratingAvg}</div>
       </div>
     </button>
   );
