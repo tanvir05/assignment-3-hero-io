@@ -130,14 +130,117 @@ body{
   margin-top: 26px;
   display: flex;
   justify-content: center;
-}
-.phone{
-  width: min(520px, 90vw);
-  height: 340px;
-  border-radius: 22px;
-  border: 10px solid #111827;
-  background: linear-gradient(135deg, var(--primary), var(--primary2));
   position: relative;
+  z-index: 2;
+}
+.phone-wrap{
+  position: relative;
+  width: min(520px, 90vw);
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+
+.phone{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.phone-img{
+  width: 420px;
+  max-width: 92%;
+  height: auto;
+  display: block;
+}
+/* Floating icons */
+.float-icon{
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  z-index: 3;
+}
+
+.float-icon img{
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Positions (adjust if needed) */
+.fi-1{ left: -85px; top: 105px; }
+.fi-2{ left: -120px; top: 210px; }
+.fi-3{ left: -85px; top: 315px; }
+
+.fi-4{ right: -85px; top: 105px; }
+.fi-5{ right: -120px; top: 210px; }
+.fi-6{ right: -85px; top: 315px; }
+
+/* Hide floating icons on smaller screens */
+@media (max-width: 900px){
+  .float-icon{ display: none; }
+}
+
+/* ===============================
+   PURPLE STATS BAND (OVERLAP)
+================================= */
+.stats-band{
+  margin-top: -60px;
+  background: linear-gradient(135deg, #5b21b6 0%, #8b5cf6 100%);
+  color: #ffffff;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  border-radius: 0;
+  padding: 70px 0 50px;
+}
+
+.stats-inner{
+  width: min(1160px, 92vw);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stats-title{
+  margin: 0 0 34px;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+}
+
+.stats-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  align-items: start;
+}
+
+.stat-label{
+  font-size: 12px;
+  opacity: 0.85;
+  letter-spacing: 0.4px;
+}
+
+.stat-value{
+  margin-top: 10px;
+  font-size: 54px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.stat-sub{
+  margin-top: 10px;
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+@media (max-width: 900px){
+  .stats-title{ font-size: 30px; }
+  .stats-grid{ grid-template-columns: 1fr; }
+  .stats-band{ margin-top: -30px; padding: 60px 0 40px; }
 }
 .phone-screen{
   position: absolute;
