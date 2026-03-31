@@ -170,7 +170,7 @@ body{
   display: block;
 }
 
-/* Positions (adjust if needed) */
+
 .fi-1{ left: -85px; top: 105px; }
 .fi-2{ left: -120px; top: 210px; }
 .fi-3{ left: -85px; top: 315px; }
@@ -179,7 +179,7 @@ body{
 .fi-5{ right: -120px; top: 210px; }
 .fi-6{ right: -85px; top: 315px; }
 
-/* Hide floating icons on smaller screens */
+
 @media (max-width: 900px){
   .float-icon{ display: none; }
 }

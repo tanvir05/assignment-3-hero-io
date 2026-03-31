@@ -18,7 +18,7 @@ export default function AppDetails() {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  // ✅ FIX 1: id from URL is string, your data id is number
+
   const app = useMemo(
     () => appsData.find((a) => String(a.id) === String(id)),
     [id]
@@ -28,10 +28,10 @@ export default function AppDetails() {
     app ? isInstalled(app.id) : false
   );
 
-  // ✅ Chart data from your new shape: ratings: [{name, count}]
+
   const chartData = useMemo(() => {
     if (!app) return [];
-    // Show 5 star at top (optional)
+
     return [...app.ratings].reverse();
   }, [app]);
 
@@ -71,7 +71,7 @@ export default function AppDetails() {
         <div className="details-right">
           <h2 className="details-title">{app.title}</h2>
 
-          {/* ✅ FIX 2: Use companyName from data */}
+
           <div className="details-sub">
             Developed by <span className="accent">{app.companyName}</span>
           </div>
@@ -87,7 +87,7 @@ export default function AppDetails() {
               <div className="metric-icon">★</div>
               <div className="metric-label">Average Ratings</div>
 
-              {/* ✅ FIX 3: ratingAvg instead of rating */}
+
               <div className="metric-value">{app.ratingAvg}</div>
             </div>
 
@@ -103,7 +103,7 @@ export default function AppDetails() {
             disabled={installed}
             onClick={onInstall}
           >
-            {/* ✅ FIX 4: size instead of sizeMB */}
+
             {installed ? "Installed" : `Install Now (${app.size} MB)`}
           </button>
         </div>
@@ -114,7 +114,7 @@ export default function AppDetails() {
       <h3 className="block-title">Ratings</h3>
       <div className="chart-wrap">
         <ResponsiveContainer width="100%" height={260}>
-          {/* ✅ FIX 5: use chartData + dataKey="count" */}
+
           <BarChart data={chartData} layout="vertical" margin={{ left: 20, right: 20 }}>
             <XAxis type="number" />
             <YAxis type="category" dataKey="name" />
