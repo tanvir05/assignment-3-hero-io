@@ -205,13 +205,15 @@ body{
 }
 
 .stats-title{
-  margin: 0 0 34px;
+  margin: 0;
+  padding-top: 18px;
   font-size: 40px;
   font-weight: 900;
   letter-spacing: 0.2px;
 }
 
 .stats-grid{
+  margin-top: 28px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 26px;
@@ -240,7 +242,7 @@ body{
 @media (max-width: 900px){
   .stats-title{ font-size: 30px; }
   .stats-grid{ grid-template-columns: 1fr; }
-  .stats-band{ margin-top: -30px; padding: 60px 0 40px; }
+  .stats-band{ margin-top: -30px; padding: 30px 0 50px; }
 }
 .phone-screen{
   position: absolute;
