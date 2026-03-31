@@ -2,6 +2,8 @@ import { useNavigate } from "react-router-dom";
 import { appsData } from "../data/apps";
 import AppCard from "../components/AppCard";
 import StatCards from "../components/StatCards";
+import googlePlayLogo from "../assets/store-logos/google-play.png";
+import appStoreLogo from "../assets/store-logos/app-store.png";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -13,18 +15,24 @@ export default function Home() {
       <section className="hero">
         <div className="hero-inner">
           <div className="hero-title">
-            We Build <span className="accent">Productive</span> Apps
+            We Build 
+            <br>
+            <span className="accent">Productive</span> Apps
           </div>
           <div className="hero-sub">
             At HERO.IO, we craft innovative apps designed to make everyday life simpler,
             smarter, and more exciting.
+            <br>
+            Our goal is to turn your ideas into digital experiences that truly make an impact.
           </div>
 
           <div className="hero-actions">
             <a className="btn btn-light" href="https://play.google.com/store" target="_blank" rel="noreferrer">
+            <img className="store-logo" src={googlePlayLogo} alt="Google Play" />
               Google Play
             </a>
             <a className="btn btn-light" href="https://www.apple.com/app-store/" target="_blank" rel="noreferrer">
+            <img className="store-logo" src={appStoreLogo} alt="App Store" />
               App Store
             </a>
           </div>
